@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+  <div class="bg-info py-5 bg-opacity-10 min-vh-100">
+    <div class="container mb-4">
+      <div class="card rounded bg-white">
+        <div class="card-header py-3 position-relative">
+          <h2 id="greetingContainer" class="display-4 text-center">ToDo App</h2>
+          <button id="clearAll" type="button" class="btn-clear position-absolute top-0 end-0 mt-2 me-2"
+            aria-label="Clear data" title="Clear all data">
+          </button>
+        </div>
+        <form class="rounded row align-items-center card-body" id="taskForm">
+          <div class="col">
+            <input type="text" class="form-control" id="taskText" placeholder="Например: сделать домашку">
+          </div>
+          <div class="col-auto">
+            <button type="submit" class="btn btn-primary">Добавить</button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <div class="container">
+      <ul class="list-group" id="todoList">
+      </ul>
+    </div>
+  </div>
+
+  <script src="js/todo.js"></script>
+  <script src="js/nav.js"></script>
+  <script src="js/signup.js"></script>
+</body>
+
+</html>
